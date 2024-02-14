@@ -345,14 +345,15 @@ margin-left: 20px;
 
 ol.type li a {
 color: #a7c44c;
-font-weight: 400;
+font-weight: 300;
 font-size: 15px;
-padding: 10px 20px;
+padding: 20px 10px;
 border: 2px solid #a7c44c;
 border-radius: 10px 0 10px 0;
 text-transform: uppercase;
 letter-spacing:0.5p;
 display: flex;
+margin-top: 8%;
 }
 * Responsive layout - makes a one column layout instead of a two-column layout */
 
