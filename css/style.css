@@ -331,8 +331,11 @@ padding-bottom: 40px;
 text-align: center;
 }
 
-ul.cat li {
+@media (max-width: 468px) {
+  
+ ul.cat li {
 display: inline-block;
+}
 }
 
 ol.type li {
@@ -348,8 +351,11 @@ padding: 10px 20px;
 border: 2px solid #a7c44c;
 border-radius: 10px 0 10px 0;
 text-transform: uppercase;
-letter-spacing: 0.5px;
+letter-spacing:0.5p;
+display: flex;
 }
+* Responsive layout - makes a one column layout instead of a two-column layout */
+
 
 ol.type li a.active {
 background: #a7c44c;
