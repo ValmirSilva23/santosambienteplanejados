@@ -1,5 +1,5 @@
-body,
-html {
+body,html {
+    margin:opx ;
 font-family: 'Roboto', sans-serif;
 text-rendering: optimizeLegibility !important;
 -webkit-font-smoothing: antialiased !important;
@@ -7,13 +7,6 @@ color: #777;
 font-weight: 300;
 width: 100% !important;
 height: 100% !important;
-}
-
-@media (min-width: 768px){.logo{
-width: 25%;
-float: center;
-margin-top: -25px;
-}
 }
 .texto1{
 color:#ffff;
@@ -229,48 +222,68 @@ background-color: #94ae44;
 }
 
 /* Header Section */
-.intro {
-display: table;
-width: 100%;
-padding: 0;
-background: url(../img/intro-bg.jpg) no-repeat center bottom;
-background-color: #e5e5e5;
--webkit-background-size: cover;
--moz-background-size: cover;
-background-size: cover;
--o-background-size: cover;
+header {
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff;
 }
-
-.intro .overlay {
-background: rgba(0, 0, 0, 0.40);
-}
-
-.intro h1 {
-color: #fff;
-font-size: 68px;
-font-weight: 400;
-margin-top: 0;
-margin-bottom: 10px;
-letter-spacing: -1px;
-}
-
-.intro span {
-color: #a7c44c;
-font-weight: 600;
-}
-
-.intro p {
-color: #ffffff;
-font-size: 24px;
-font-weight: 300;
-margin-top: 10px;
-margin-bottom: 40px;
+.lgpt{
+    width:180PX;
 }
 
 header .intro-text {
-padding-top: 300px;
-padding-bottom: 200px;
-text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text {
+	    padding-top: 300px;
+	    padding-bottom: 200px;
+	}
+}
+
+header .intro-text .intro-lead-in {
+    font-family: "Playfair Display",sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-lead-in {
+	    font-family: "Playfair Display",sans-serif;
+	    font-style: italic;
+	    font-size: 40px;
+	    line-height: 40px;
+	    margin-bottom: 25px;
+	}
+}
+
+header .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	header .intro-text .intro-heading {
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    font-size: 75px;
+	    line-height: 75px;
+	    margin-bottom: 50px;
+	}
 }
 
 /* About Section */
